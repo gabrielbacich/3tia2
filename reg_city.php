@@ -1,9 +1,9 @@
 <?php
 include 'connect.php';
 if(isset($_POST['sub'])){
-    $t=$_POST['text'];
+    $nameCity=$_POST['text'];
     //$i="insert into reg(name,username,password,city,image,gender)value('$t','$u','$p','$c','$img','$g')";
-    $i="insert into city (nameCity) values ('Colatina')";
+    $i="insert into city (nameCity) values (' $nameCity')";
     mysqli_query($con, $i);
 }
 ?>
