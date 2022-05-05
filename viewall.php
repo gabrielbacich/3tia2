@@ -1,6 +1,11 @@
 <?php
-include 'connect.php';
+    include 'connect.php';
+    include 'checkLogin.php';
+    include 'checkAdmin.php';
 ?>
+
+<a href="home.php">Home</a>
+
 <table border='1'>
     <tr>
         <th>

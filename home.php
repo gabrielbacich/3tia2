@@ -1,10 +1,11 @@
 <?php
     include 'connect.php';
     include 'checkLogin.php';
-    $s="select*from reg where id='$_SESSION[id]'";
+
+    $s="select * from reg where id='$_SESSION[id]'";
     $qu= mysqli_query($con, $s);
     $f=mysqli_fetch_assoc($qu);
-    
+
 ?>
 <html>
     <head>
@@ -52,5 +53,20 @@ echo $f['image'];?>" width="100px" height="100px">
 <a href="edit.php">Edit</a>
 <a href="delete.php">Delete</a>
 <a href="logout.php">Logout</a>
+
+<?php
+    if($_SESSION['profile']=='Admin'){
+        echo "
+            <a href='viewall.php'>View All Users</a>
+            <a href='reg_city.php'>Reg City</a>
+        ";
+    }else{
+        echo "
+            <a href=''>Você não ADM</a>
+        ";
+    }
+?>
+
+
     </body>
 </html>
