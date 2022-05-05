@@ -25,58 +25,14 @@ if(isset($_POST['sub'])){
             <table>
                 <tr>
                     <td>
-                        Name
-                        <input type="text" name="text" value="<?php echo $f['name']?>">
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        Username
+                        Nome do produto
                         <input type="text" name="user" value="<?php echo $f['username']?>">
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        password
-                        <input type="password" name="pass" value="<?php echo $f['password']?>">
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        city
-                        <select name="city">
-                            <option value="">-select-</option>
-                            <option value="knp"<?php if($f['city']=='knp'){ echo "selected='selected'";}?>>kanpur</option>
-                            <option value="lko"<?php if($f['city']=='lko'){ echo "selected='selected'";}?>>lucknow</option>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        Gender
-                        <?php if($f['gender']=='male'){
-                            ?>
-                          <input type="radio"name="gen" id="gen" value="male" checked>
-                        <?php
-                        } else {
-?>
-                        <input type="radio"name="gen" id="gen" value="male">
-                        <?php } ?>male
-                       <?php if($f['gender']=='female'){
-                            ?>
-                          <input type="radio"name="gen" id="gen" value="female" checked>
-                        <?php
-                        } else {
-?>
-                        <input type="radio"name="gen" id="gen" value="female">
-                        <?php } ?>female
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        Image
-                        <img src="<?php echo $f['image']?>" width="100px" height="100px">
-                        <input type="file" name="f1">
-                        <input type="hidden" name="img1" value="<?php echo $f['image']?>">
+                        Preço do produto
+                        <input type="text" name="pass" value="<?php echo $f['password']?>">
                     </td>
                 </tr>
                 <tr>

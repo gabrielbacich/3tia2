@@ -13,7 +13,7 @@ if(isset($_POST['sub'])){
       header ('location:home.php');
    }
    else{
-       echo 'username or password does not exist';
+       echo 'Nome ou preço do produto não existe';
    }
   
 }
@@ -25,20 +25,20 @@ if(isset($_POST['sub'])){
         <title></title>
     </head>
     <body>
-        <h1> Login </h1>
+        <h1> Produto </h1>
         <form method="POST" enctype="multipart/form-data">
             <table>
                 
                 <tr>
                     <td>
-                        Username
+                        Nome do produto
                         <input type="text" name="user">
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        password
-                        <input type="password" name="pass">
+                        Preço do produto
+                        <input type="text" name="pass">
                     </td>
                 </tr>
                 <tr>
