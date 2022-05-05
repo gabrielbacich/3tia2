@@ -25,7 +25,7 @@ if(isset($_POST['sub'])){
         <title></title>
     </head>
     <body>
-        <h1> Produto </h1>
+        <h1> Produto Login </h1>
         <form method="POST" enctype="multipart/form-data">
             <table>
                 
@@ -41,6 +41,16 @@ if(isset($_POST['sub'])){
                         <input type="text" name="pass">
                     </td>
                 </tr>
+                <form action="form-action.php" method="post">
+            <p>
+                <select name="cidades">
+                    <option value=""></option>
+                    <option value="scs">Frutas</option>
+                    <option value="sa">Doces</option>
+                    <option value="sbc">Salgado</option>
+                </select>
+            </p>
+        </form>
                 <tr>
                     <td>
                         <input type="submit" name="sub" value="submit">

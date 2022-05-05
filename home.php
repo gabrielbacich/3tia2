@@ -17,40 +17,18 @@
             Name
         </td><td>
             
-<?php echo $f['name'];?>
-            </td>
-    </tr>
-    <tr>
-    <td> Username</td>
-    
-    <td>
-            
 <?php
 echo $f['username'];?>
         </td></tr>
-<tr><td> Password</td>
+<tr><td> Nome do produto</td>
     <td>
 <?php
 echo $f['password']."<br>";?>
     </td></tr>
-  <tr><td> City </td>   <td>           
- <?php
- echo $f['city']."<br>";?></td></tr>
-  <tr>
-      <td>Gender</td>
-      <td><?php
-echo $f['gender']."<br>";?></td>
-  </tr>
-  <tr><td> Image</td><td>
-
- <img src="<?php
-echo $f['image'];?>" width="100px" height="100px">
-</td>
-
-</tr>
+    <tr><td> Nome do produto</td>
 </table>
-<a href="edit.php">Edit</a>
-<a href="delete.php">Delete</a>
-<a href="logout.php">Logout</a>
-    </body>
+<a href="edit.php">Editar</a>
+<a href="delete.php">Deletar</a>
+<a href="logout.php">Sair</a>
+</body>
 </html>

@@ -23,6 +23,16 @@ if(isset($_POST['sub'])){
     ?> 
 <form method="POST" enctype="multipart/form-data">
             <table>
+            <form action="form-action.php" method="post">
+            <p>
+                <select name="cidades">
+                    <option value=""></option>
+                    <option value="scs">Frutas</option>
+                    <option value="sa">Doces</option>
+                    <option value="sbc">Salgado</option>
+                </select>
+            </p>
+        </form>
                 <tr>
                     <td>
                         Nome do produto
