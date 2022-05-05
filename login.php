@@ -12,7 +12,6 @@ if(isset($_POST['sub'])){
     where username='$u' and password= '$p'
     ";   
     $qu= mysqli_query($con, $s);
-   
     if(mysqli_num_rows($qu)>0){
         $f= mysqli_fetch_assoc($qu);
         $_SESSION['id']=$f['id'];
@@ -34,17 +33,17 @@ if(isset($_POST['sub'])){
     <body>
         <form method="POST" enctype="multipart/form-data">
             <table>
-                
+              <h1>Produto</h1>  
                 <tr>
                     <td>
-                        Username
+                        Nome Produto
                         <input type="text" name="user">
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        password
-                        <input type="password" name="pass">
+                        Preço Produto
+                        <input type="text" name="pass">
                     </td>
                 </tr>
                 <tr>
@@ -55,14 +54,7 @@ if(isset($_POST['sub'])){
 
                 <tr>
                     <td>
-                        <input type="submit" value="Register" name="reg">
-                               
-                    </td>
-                </tr>
-
-                <tr>
-                    <td>
-                        <a href="reg.php"> Register</a>
+                        <a href="reg.php"> Registrar</a>
                     </td>
                 </tr>
                 
