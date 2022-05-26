@@ -9,6 +9,7 @@ if(isset($_POST['sub'])){
     $p=$_POST['remember'];
     $s= "select * from reg where username='$u' and password= '$p'";   
    $qu= mysqli_query($con, $s);
+   $con=  mysqli_connect("localhost","root","","test");
    if(mysqli_num_rows($qu)>0){
       $f= mysqli_fetch_assoc($qu);
       $_SESSION['id']=$f['id'];
