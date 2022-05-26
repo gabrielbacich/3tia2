@@ -17,7 +17,7 @@ if(isset($_POST['sub'])){
    else{
        echo 'Nome ou preço do produto não existe';
    }
-  
+
 }
 ?>
 
