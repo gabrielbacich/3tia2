@@ -1,3 +1,13 @@
+<?php>
+    include 'connect.php';
+    $s="select*from reg where id='$_SESSION[id]'";
+    $qu= mysqli_query($con, $s);
+    $f=mysqli_fetch_assoc($qu);
+
+    $a = "Select count(id) as 'tudo' from reg";
+    $querry = mysqli_query($con, $a);
+    $fe = mysqli_fetch_assoc($querry);
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -876,9 +886,10 @@
             <!-- small box -->
             <div class="small-box bg-info">
               <div class="inner">
-                <h3>5</h3>
+                <h3><?php echo $fe['tudo'] ?></h3>
+                
 
-                <p>New Orders</p>
+                <p>Users</p>
               </div>
               <div class="icon">
                 <i class="ion ion-bag"></i>
